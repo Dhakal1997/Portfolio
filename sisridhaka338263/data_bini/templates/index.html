@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Sisriksha Dhakal</title>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Section -->
+<header class="jumbotron text-center bg-primary text-white mb-0" style="padding: 150px 0;">
+    <h1 class="display-4">Welcome to My Portfolio</h1>
+    <p class="lead">I am a Data Scientist | Python Developer | SQL Enthusiast</p>
+    <a href="#portfolio" class="btn btn-light btn-lg">View My Work</a>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Hello! My name is Sisriksha Dhakal. I'm a passionate in data analyst and data Science skilled in Python, SQL, and Excel. I specialize in data analysis, data science, data entry, and Machine Learning with a keen interest in extracting actionable insights from data.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="img-fluid" alt="About Me Image">
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">My Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Python</h5>
+                <div class="rating">
+                    ★★★☆☆
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Data Analysis</h5>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>SQL</h5>
+                <div class="rating">
+                    ★★★☆☆
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Machine Learning</h5>
+                <div class="rating">
+                    ★★★☆☆
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Data Visualization</h5>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Statistics</h5>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="projects" class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/image.p1.jpeg') }}" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Housing price prediction</p>
+                    <a href="https://github.com/Dhakal1997/Housepriceprediction/blob/main/Houseprediction.ipynb" class="btn btn-primary">Learn More</a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">CRUD Contact Application.</p>
+                    <a href="https://binitadhakal.pythonanywhere.com/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/Images.p3.png') }}" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text"> Morgage and Car payment Analysis.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-light mt-5 pt-5 pb-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <h5>John Doe</h5>
+                    <p>"Amazing work! Highly recommend for any project!"</p>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <h5>Jane Smith</h5>
+                    <p>"Professional and efficient. Will hire again!"</p>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <h5>Emily Johnson</h5>
+                    <p>"Great experience from start to finish!"</p>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Showcase Section -->
+<section id="showcase" class="bg-light mt-5 pt-5 pb-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Resume & Certifications</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Resume</h4>
+                <a href="path/to/your-resume.pdf" class="btn btn-primary" target="_blank">Download My Resume</a>
+            </div>
+            <div class="col-md-6">
+                <h4>Certifications</h4>
+                <ul>
+                    <li>Introduction to python <a href="https://www.sololearn.com/certificates/CC-YM3Y5PYZ" target="_blank">View Certificate</a></li>
+                    <li>Data Programming <a href="https://www.sololearn.com/certificates/CC-CJIWNLY5" target="_blank">View Certificate</a></li>
+                    <li>Certification 3: <a href="link/to/certification-3" target="_blank">View Certificate</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light mt-5 pt-5 pb-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="text-center mt-4">
+    <h5>Connect with me:</h5>
+    <a href="https://github.com/dhakal1997" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/sisriksha-dhakal-1877a517a/" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://twitter.com/yourusername" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-twitter"></i> Twitter
+    </a>
+    <a href="https://www.sololearn.com/en/profile/29940906" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-sololearn"></i> SoloLearn
+    </a>
+    <a href="https://www.kaggle.com/sisrikshadhakal" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-kaggle"></i> Kaggle
+    </a>
+</div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center bg-dark text-white py-3">
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
